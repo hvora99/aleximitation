@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Keychain Websuite - Custom Keychains</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">MyPortfolio</div>
+            <div class="logo">Keychain<span>Websuite</span></div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Order Now</a></li>
             </ul>
         </nav>
     </header>
@@ -21,21 +23,85 @@
     <main>
         <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Welcome to My Portfolio</h1>
-                <p>I'm a passionate developer creating beautiful web experiences.</p>
-                <a href="#contact" class="cta-button">Get In Touch</a>
+                <h1>Carry Your Style Everywhere</h1>
+                <p>High-quality custom keychains: Acrylic, Wood, and Metal designs.</p>
+                <a href="#products" class="cta-button">Shop Collection</a>
             </div>
         </section>
 
-        <section id="about" class="about">
-            <h2>About Me</h2>
-            <div class="about-container">
-                <p>Hello! I'm Alex, a web developer based in... well, everywhere! I love building clean, functional, and user-friendly websites. My journey in tech started with a curiosity for how things work on the internet, and now I'm here helping others bring their ideas to life.</p>
+        <!-- New Feature: How It Works -->
+        <section id="process" class="process-section">
+            <h2>Order Your Custom Keychain in 3 Easy Steps</h2>
+            <div class="process-grid">
+                <div class="step">
+                    <div class="step-icon">📝</div>
+                    <h3>1. Describe Design</h3>
+                    <p>Tell us your idea and upload your artwork via our contact form.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">🎨</div>
+                    <h3>2. We Craft</h3>
+                    <p>Our artisans hand-design and manufacture your unique piece.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">📦</div>
+                    <h3>3. Fast Shipping</h3>
+                    <p>Receive your custom keychain at your doorstep within days.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <h2>Our Top Picks</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-icon">✨</div>
+                    <h3>Acrylic Magic</h3>
+                    <p>Crystal clear shapes with vibrant colors.</p>
+                    <span class="price">$10.00</span>
+                    <button class="buy-button">Details</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🪵</div>
+                    <h3>Rustic Wood</h3>
+                    <p>Eco-friendly laser-engraved designs.</p>
+                    <span class="price">$12.00</span>
+                    <button class="buy-button">Details</button>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">⛓️</div>
+                    <h3>Sleek Metal</h3>
+                    <p>Durable and elegant stainless steel.</p>
+                    <span class="price">$15.00</span>
+                    <button class="buy-button">Details</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Feature: Customer Reviews -->
+        <section id="reviews" class="reviews-section">
+            <h2>What Our Customers Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The acrylic quality is stunning! Best custom gift I've bought."</p>
+                    <strong>- Sarah M.</strong>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Fast delivery and the wooden engraving is very precise."</p>
+                    <strong>- Jason R.</strong>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Amazing customer service. They helped me with my logo design!"</p>
+                    <strong>- Alex W.</strong>
+                </div>
             </div>
         </section>
 
         <section id="contact" class="contact">
-            <h2>Contact Me</h2>
+            <h2>Start Your Order</h2>
             <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -46,16 +112,16 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message">Describe your dream keychain</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Include size, quantity, and material..." required></textarea>
                 </div>
-                <button type="submit" class="submit-button">Send Message</button>
+                <button type="submit" class="submit-button">Send Request</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 MyPortfolio. All rights reserved.</p>
+        <p>&copy; 2024 Keychain Websuite. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
