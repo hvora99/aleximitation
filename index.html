@@ -2,192 +2,1094 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aleximitation - Premium Custom Keychains. Elegant, modern, and handcrafted product showcase.">
-    <title>Aleximitation | Premium Custom Keychains</title>
 
-    <!-- Google Fonts: Playfair Display for Serifs, Inter for Sans-Serif, Mrs Saint Delafield for Script -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Aleximitation - Discover elegant, unique and stylish keychains made for every personality.">
+
+    <meta name="theme-color" content="#0B0A08">
+
+    <title>Aleximitation | Keychains for Every Story</title>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
 
-    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Allura&display=swap"
+          rel="stylesheet">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <!-- HEADER -->
-    <header id="header" class="site-header">
-        <div class="container header-container">
-            <!-- Logo Section -->
-            <div class="logo-wrapper">
-                <a href="#hero" class="logo">
-                    <div class="logo-symbol">
-                        <!-- Refined geometric luxury "A" mark -->
-                        <svg width="34" height="28" viewBox="0 0 34 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17 0L33.4545 28H28.9091L17 7.63636L5.09091 28H0.545455L17 0Z" fill="#D9A441"/>
-                            <path d="M17 11.5L22.5 21H11.5L17 11.5Z" fill="#D9A441"/>
-                            <rect x="10.5" y="24" width="13" height="1.5" fill="#D9A441"/>
-                        </svg>
-                    </div>
-                    <div class="logo-text">
-                        <span class="brand-name">Aleximitation</span>
-                        <span class="brand-tagline">KEYCHAINS FOR EVERY STORY</span>
-                    </div>
-                </a>
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="site-header" id="main-header">
+
+    <div class="header-container">
+
+        <!-- Brand -->
+        <a href="#hero" class="brand">
+
+            <div class="brand-mark" aria-hidden="true">
+                <span>A</span>
             </div>
 
-            <!-- Navigation Links -->
-            <nav class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#popular-keychains" class="nav-link">Our Keychains</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="brand-text">
 
-            <!-- Actions Section -->
-            <div class="header-actions">
-                <button class="search-btn" aria-label="Search">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="11" cy="11" r="8"></circle>
-                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                    </svg>
-                </button>
-
-                <a href="#contact" class="btn btn-primary btn-pill get-in-touch-btn">
-                    Get in Touch
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="7" y1="17" x2="17" y2="7"></line>
-                        <polyline points="7 7 17 7 17 17"></polyline>
-                    </svg>
-                </a>
-
-                <!-- Mobile Menu Button -->
-                <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Menu" aria-expanded="false">
-                    <span class="hamburger-bar"></span>
-                    <span class="hamburger-bar"></span>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Navigation Panel -->
-        <div class="mobile-nav" id="mobile-nav">
-            <div class="mobile-nav-content">
-                <ul class="mobile-nav-list">
-                    <li><a href="#hero" class="mobile-nav-link">Home</a></li>
-                    <li><a href="#popular-keychains" class="mobile-nav-link">Our Keychains</a></li>
-                    <li><a href="#about" class="mobile-nav-link">About</a></li>
-                    <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
-                </ul>
-<!--                <div class="mobile-nav-actions">-->
-<!--                    <a href="#contact" class="btn btn-primary btn-pill">Get in Touch</a>-->
-<!--                </div>-->
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <!-- HERO -->
-        <section id="hero" class="hero-section">
-            <div class="container hero-container">
-                <div class="hero-left">
-                    <span class="hero-eyebrow fade-up">MORE THAN A KEYCHAIN</span>
-                    <h1 class="hero-title fade-up">Small Details.<br><span class="gold-text">Big Personality.</span></h1>
-                    <p class="hero-description fade-up">Discover unique and stylish keychains made to add a personal touch to your everyday essentials.</p>
-
-                    <div class="hero-btns fade-up">
-                        <a href="#popular-keychains" class="btn btn-primary btn-pill">Explore Collection &nbsp; &rarr;</a>
-                        <a href="#contact" class="btn btn-outline-gold btn-pill">Contact Us</a>
-                    </div>
-
-                    <div class="hero-features fade-up">
-                        <div class="feature-highlight">
-                            <div class="feature-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9z"></path><path d="M11 3 8 9l4 13 4-13-3-6"></path><path d="M2 9h20"></path></svg>
-                            </div>
-                            <span class="feature-text">Unique<br>Designs</span>
-                        </div>
-                        <div class="feature-highlight">
-                            <div class="feature-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
-                            </div>
-                            <span class="feature-text">Quality<br>Craftsmanship</span>
-                        </div>
-                        <div class="feature-highlight">
-                            <div class="feature-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v10H4V12"></path><path d="M2 7h20v5H2z"></path><path d="M12 22V7"></path><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"></path><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"></path></svg>
-                            </div>
-                            <span class="feature-text">Perfect<br>for Gifting</span>
-                        </div>
-                    </div>
+                <div class="brand-name">
+                    Aleximitation
                 </div>
 
-                <div class="hero-right">
-                    <div class="product-presentation fade-in">
-                        <div class="product-image-mask">
-                            <!-- Refined: Using the five colorful bell-style keychains photograph -->
-                            <img src="images/WhatsApp Image 2026-09-13 at 4.04.59 PM.jpeg" alt="Aleximitation Bell Keychain Collection" class="hero-product-img">
-                        </div>
-                        <div class="handwritten-decorative">
-                            Good Things<br>Travel With You
-                        </div>
-                    </div>
-
-                    <div class="hero-carousel-indicator fade-in">
-                        <div class="carousel-numbers">01 <span>/</span> 02 <span>/</span> 03</div>
-                        <div class="carousel-dots">
-                            <span class="carousel-dot active"></span>
-                            <span class="carousel-dot"></span>
-                            <span class="carousel-dot"></span>
-                        </div>
-                        <div class="carousel-nav">
-                            <button class="carousel-btn" aria-label="Previous"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
-                            <button class="carousel-btn" aria-label="Next"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
-                        </div>
-                    </div>
+                <div class="brand-tagline">
+                    KEYCHAINS FOR EVERY STORY
                 </div>
+
             </div>
-        </section>
 
-        <!-- POPULAR KEYCHAINS -->
-        <section id="popular-keychains" class="section">
-            <div class="container">[POPULAR KEYCHAINS PLACEHOLDER]</div>
-        </section>
+        </a>
 
-        <!-- KEYCHAIN CATEGORIES -->
-        <section id="categories" class="section">
-            <div class="container">[KEYCHAIN CATEGORIES PLACEHOLDER]</div>
-        </section>
 
-        <!-- CUSTOM KEYCHAIN -->
-        <section id="custom-keychain" class="section">
-            <div class="container">[CUSTOM KEYCHAIN PLACEHOLDER]</div>
-        </section>
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main navigation">
 
-        <!-- ABOUT -->
-        <section id="about" class="section">
-            <div class="container">[ABOUT PLACEHOLDER]</div>
-        </section>
+            <a href="#hero" class="nav-link active">
+                Home
+            </a>
 
-        <!-- TESTIMONIAL -->
-        <section id="testimonials" class="section">
-            <div class="container">[TESTIMONIAL PLACEHOLDER]</div>
-        </section>
+            <a href="#popular-keychains" class="nav-link">
+                Our Keychains
+            </a>
 
-        <!-- CONTACT -->
-        <section id="contact" class="section">
-            <div class="container">[CONTACT PLACEHOLDER]</div>
-        </section>
-    </main>
+            <a href="#about" class="nav-link">
+                About
+            </a>
 
-    <!-- FOOTER -->
-    <footer id="footer" class="site-footer">
-        <div class="container">[FOOTER PLACEHOLDER]</div>
-    </footer>
+            <a href="#contact" class="nav-link">
+                Contact
+            </a>
 
-    <!-- JS -->
-    <script src="js/script.js"></script>
+        </nav>
+
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+
+            <button class="search-button"
+                    type="button"
+                    aria-label="Search">
+
+                <span class="search-icon"></span>
+
+            </button>
+
+            <a href="#contact" class="header-contact">
+                Get in Touch
+                <span>↗</span>
+            </a>
+
+            <!-- Mobile Menu -->
+            <button class="menu-button"
+                    type="button"
+                    aria-label="Open menu"
+                    aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-menu">
+
+        <nav aria-label="Mobile navigation">
+
+            <a href="#hero">Home</a>
+
+            <a href="#popular-keychains">
+                Our Keychains
+            </a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+            <a href="#contact" class="mobile-contact">
+                Get in Touch ↗
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     MAIN CONTENT
+===================================================== -->
+
+<main>
+
+
+    <!-- =====================================================
+         HERO SECTION
+    ===================================================== -->
+
+    <section class="hero" id="hero">
+
+        <div class="hero-container">
+
+            <!-- Hero Text -->
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    MORE THAN A KEYCHAIN
+                </div>
+
+                <h1>
+                    Small Details.
+                    <span>Big Personality.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover unique and stylish keychains made
+                    to add a personal touch to your everyday
+                    essentials.
+                </p>
+
+
+                <!-- CTA -->
+                <div class="hero-buttons">
+
+                    <a href="#popular-keychains"
+                       class="button button-gold">
+
+                        Explore Collection
+                        <span>→</span>
+
+                    </a>
+
+                    <a href="#contact"
+                       class="button button-outline">
+
+                        <span class="button-icon">✉</span>
+                        Contact Us
+
+                    </a>
+
+                </div>
+
+
+                <!-- Features -->
+                <div class="hero-features">
+
+                    <div class="hero-feature">
+
+                        <div class="feature-icon">
+                            ◇
+                        </div>
+
+                        <div>
+                            <strong>Unique</strong>
+                            <span>Designs</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero-feature">
+
+                        <div class="feature-icon">
+                            ♢
+                        </div>
+
+                        <div>
+                            <strong>Quality</strong>
+                            <span>Craftsmanship</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="hero-feature">
+
+                        <div class="feature-icon">
+                            ♧
+                        </div>
+
+                        <div>
+                            <strong>Perfect</strong>
+                            <span>for Gifting</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Hero Image -->
+            <div class="hero-visual">
+
+                <img
+                        src="images/keychains/temple-bell.png"
+                        alt="Aleximitation colorful traditional bell keychains"
+                        class="hero-image"
+                >
+
+                <div class="hero-decoration">
+                    Good Things<br>
+                    Travel With You
+                </div>
+
+                <div class="hero-slider">
+
+                    <span class="slider-current">01</span>
+                    <span>/</span>
+                    <span>02</span>
+                    <span>/</span>
+                    <span>03</span>
+
+                    <button aria-label="Previous">
+                        ←
+                    </button>
+
+                    <button aria-label="Next">
+                        →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         POPULAR KEYCHAINS
+    ===================================================== -->
+
+    <section class="popular-section"
+             id="popular-keychains">
+
+        <div class="container">
+
+            <!-- Section Header -->
+            <div class="section-heading">
+
+                <div>
+
+                    <div class="eyebrow">
+                        FEATURED KEYCHAINS
+                    </div>
+
+                    <h2>
+                        Our Popular Collection
+                    </h2>
+
+                    <p>
+                        Traditional. Elegant. Unique.
+                        Made for every personality.
+                    </p>
+
+                </div>
+
+                <a href="#popular-keychains"
+                   class="view-all">
+
+                    View All Products
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+
+            <!-- Products -->
+            <div class="products-grid">
+
+
+                <!-- Product 1 -->
+                <article class="product-card">
+
+                    <div class="product-image-wrapper">
+
+                        <img
+                                src="images/keychains/temple-bell.png"
+                                alt="Temple Bell Keychain"
+                                loading="lazy"
+                        >
+
+                        <button class="favorite-button"
+                                aria-label="Add Temple Bell Keychain to favorites">
+
+                            ♡
+
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Temple Bell Keychain
+                        </h3>
+
+                        <p>
+                            Traditional design with modern style.
+                        </p>
+
+                        <a href="#contact"
+                           class="enquire-button"
+                           data-product="Temple Bell Keychain">
+
+                            <span>✉</span>
+                            Enquire Now
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 2 -->
+                <article class="product-card">
+
+                    <div class="product-image-wrapper">
+
+                        <img
+                                src="images/keychains/peacock-feather.jpeg"
+                                alt="Peacock Feather Keychain"
+                                loading="lazy"
+                        >
+
+                        <button class="favorite-button"
+                                aria-label="Add Peacock Feather Keychain to favorites">
+
+                            ♡
+
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Peacock Feather Keychain
+                        </h3>
+
+                        <p>
+                            Elegant and eye-catching design.
+                        </p>
+
+                        <a href="#contact"
+                           class="enquire-button"
+                           data-product="Peacock Feather Keychain">
+
+                            <span>✉</span>
+                            Enquire Now
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 3 -->
+                <article class="product-card">
+
+                    <div class="product-image-wrapper">
+
+                        <img
+                                src="images/keychains/divine-bell.jpeg"
+                                alt="Divine Bell Keychain"
+                                loading="lazy"
+                        >
+
+                        <button class="favorite-button"
+                                aria-label="Add Divine Bell Keychain to favorites">
+
+                            ♡
+
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Divine Bell Keychain
+                        </h3>
+
+                        <p>
+                            A symbol of faith and positivity.
+                        </p>
+
+                        <a href="#contact"
+                           class="enquire-button"
+                           data-product="Divine Bell Keychain">
+
+                            <span>✉</span>
+                            Enquire Now
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Product 4 -->
+                <article class="product-card">
+
+                    <div class="product-image-wrapper">
+
+                        <img
+                                src="images/keychains/premium-metal.jpeg"
+                                alt="Premium Metal Keychain"
+                                loading="lazy"
+                        >
+
+                        <button class="favorite-button"
+                                aria-label="Add Premium Metal Keychain to favorites">
+
+                            ♡
+
+                        </button>
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>
+                            Premium Metal Keychain
+                        </h3>
+
+                        <p>
+                            Modern look for everyday use.
+                        </p>
+
+                        <a href="#contact"
+                           class="enquire-button"
+                           data-product="Premium Metal Keychain">
+
+                            <span>✉</span>
+                            Enquire Now
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Product Navigation -->
+            <div class="product-navigation">
+
+                <button aria-label="Previous products">
+                    ←
+                </button>
+
+                <div class="product-dots">
+
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+                <button aria-label="Next products">
+                    →
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         KEYCHAIN CATEGORIES
+    ===================================================== -->
+
+    <section class="categories-section"
+             id="categories">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <div class="eyebrow">
+                        EXPLORE OUR RANGE
+                    </div>
+
+                    <h2>
+                        Keychain Categories
+                    </h2>
+
+                    <p>
+                        Find the perfect keychain to match your style.
+                    </p>
+
+                </div>
+
+                <a href="#categories"
+                   class="view-all">
+
+                    View All Categories
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+
+            <div class="categories-grid">
+
+                <a href="#popular-keychains"
+                   class="category-card">
+
+                    <img
+                            src="images/keychains/divine-bell.jpeg"
+                            alt="Spiritual keychains"
+                            loading="lazy"
+                    >
+
+                    <div class="category-overlay">
+                        <h3>Spiritual<br>Keychains</h3>
+                    </div>
+
+                </a>
+
+
+                <a href="#popular-keychains"
+                   class="category-card">
+
+                    <img
+                            src="images/keychains/peacock-feather.jpeg"
+                            alt="Designer keychains"
+                            loading="lazy"
+                    >
+
+                    <div class="category-overlay">
+                        <h3>Designer<br>Keychains</h3>
+                    </div>
+
+                </a>
+
+
+                <a href="#popular-keychains"
+                   class="category-card">
+
+                    <img
+                            src="images/keychains/evil-eye-bell.jpeg"
+                            alt="Evil eye keychains"
+                            loading="lazy"
+                    >
+
+                    <div class="category-overlay">
+                        <h3>Evil Eye<br>Keychains</h3>
+                    </div>
+
+                </a>
+
+
+                <a href="#popular-keychains"
+                   class="category-card">
+
+                    <img
+                            src="images/keychains/premium-metal.jpeg"
+                            alt="Metal keychains"
+                            loading="lazy"
+                    >
+
+                    <div class="category-overlay">
+                        <h3>Metal<br>Keychains</h3>
+                    </div>
+
+                </a>
+
+
+                <a href="#popular-keychains"
+                   class="category-card">
+
+                    <img
+                            src="images/keychains/car-keychain.jpeg"
+                            alt="Car keychains"
+                            loading="lazy"
+                    >
+
+                    <div class="category-overlay">
+                        <h3>Car<br>Keychains</h3>
+                    </div>
+
+                </a>
+
+
+                <a href="#popular-keychains"
+                   class="category-card">
+
+                    <img
+                            src="images/keychains/trident.jpeg"
+                            alt="Religious keychains"
+                            loading="lazy"
+                    >
+
+                    <div class="category-overlay">
+                        <h3>Religious<br>Keychains</h3>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CUSTOM KEYCHAIN
+    ===================================================== -->
+
+    <section class="custom-section"
+             id="custom-service">
+
+        <div class="custom-image">
+
+            <img
+                    src="images/keychains/car-keychain.jpeg"
+                    alt="Custom keychain"
+                    loading="lazy"
+            >
+
+        </div>
+
+        <div class="custom-content">
+
+            <div class="eyebrow">
+                MAKE IT UNIQUE
+            </div>
+
+            <h2>
+                Looking for a Custom Keychain?
+            </h2>
+
+            <p>
+                We can help you create personalized keychains
+                for gifts, events or special moments.
+                Share your idea with us!
+            </p>
+
+            <a href="#contact"
+               class="button button-gold">
+
+                Discuss Your Idea
+                <span>→</span>
+
+            </a>
+
+        </div>
+
+
+        <div class="custom-options">
+
+            <div>
+                <span>◇</span>
+                Names & Initials
+            </div>
+
+            <div>
+                <span>◇</span>
+                Logos & Symbols
+            </div>
+
+            <div>
+                <span>◇</span>
+                Custom Designs
+            </div>
+
+            <div>
+                <span>◇</span>
+                Bulk Orders
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT
+    ===================================================== -->
+
+    <section class="about-section"
+             id="about">
+
+        <div class="container about-container">
+
+            <div class="about-content">
+
+                <div class="eyebrow">
+                    ABOUT ALEXIMITATION
+                </div>
+
+                <h2>
+                    Crafted with Passion
+                </h2>
+
+                <p>
+                    At Aleximitation, we believe that even the
+                    smallest things can carry big meaning.
+                    Our keychains are designed to be stylish,
+                    durable and full of character — perfect for
+                    your daily life, gifting and special moments.
+                </p>
+
+                <a href="#contact"
+                   class="button button-light">
+
+                    Learn More
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+
+            <div class="about-features">
+
+                <div>
+                    <span>◇</span>
+                    <strong>Creative</strong>
+                    <small>Designs</small>
+                </div>
+
+                <div>
+                    <span>◇</span>
+                    <strong>Quality</strong>
+                    <small>Products</small>
+                </div>
+
+                <div>
+                    <span>♡</span>
+                    <strong>Made for</strong>
+                    <small>Every Personality</small>
+                </div>
+
+            </div>
+
+
+            <div class="about-image">
+
+                <img
+                        src="images/keychains/temple-bell.png"
+                        alt="Aleximitation keychain"
+                        loading="lazy"
+                >
+
+                <div>
+                    Small Things.<br>
+                    Make Big Stories.
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TESTIMONIAL
+    ===================================================== -->
+
+    <section class="testimonial-section"
+             id="testimonials">
+
+        <div class="container testimonial-container">
+
+            <div class="testimonial-content">
+
+                <div class="eyebrow">
+                    WHAT OUR CUSTOMERS SAY
+                </div>
+
+                <h2>
+                    Loved by Keychain Enthusiasts
+                </h2>
+
+                <div class="testimonial">
+
+                    <div class="testimonial-avatar">
+                        ★
+                    </div>
+
+                    <div>
+
+                        <p>
+                            "Amazing designs and great quality!
+                            The keychains look even better in
+                            real life. Highly recommended!"
+                        </p>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <small>
+                            — Happy Customer
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-preview">
+
+                <div class="eyebrow">
+                    HAVE A QUESTION?
+                </div>
+
+                <h2>
+                    Let's Stay in Touch
+                </h2>
+
+                <p>
+                    Have a question or a custom request?
+                    We'd love to hear from you.
+                </p>
+
+                <a href="#contact"
+                   class="button button-gold">
+
+                    ✉ Email Us
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT
+    ===================================================== -->
+
+    <section class="contact-section"
+             id="contact">
+
+        <div class="container">
+
+            <div class="contact-heading">
+
+                <div class="eyebrow">
+                    GET IN TOUCH
+                </div>
+
+                <h2>
+                    Let's Create Something Special.
+                </h2>
+
+                <p>
+                    Have a question about our keychains?
+                    Interested in a custom design?
+                    Send us an email and we'll be happy to help.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-card">
+
+                <span class="contact-icon">
+                    ✉
+                </span>
+
+                    <h3>
+                        Email Us
+                    </h3>
+
+                    <p>
+                        Send us your questions or enquiries.
+                    </p>
+
+                    <a href="mailto:YOUR_EMAIL@example.com">
+                        YOUR_EMAIL@example.com
+                    </a>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                <span class="contact-icon">
+                    ♡
+                </span>
+
+                    <h3>
+                        Custom Requests
+                    </h3>
+
+                    <p>
+                        Tell us about your idea and
+                        we'll help bring it to life.
+                    </p>
+
+                    <a href="mailto:YOUR_EMAIL@example.com">
+                        Discuss Your Idea →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="site-footer"
+        id="main-footer">
+
+    <div class="container footer-container">
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                A
+            </div>
+
+            <div>
+
+                <h3>
+                    Aleximitation
+                </h3>
+
+                <span>
+                    KEYCHAINS FOR EVERY STORY
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h4>
+                Quick Links
+            </h4>
+
+            <a href="#hero">Home</a>
+            <a href="#popular-keychains">Our Keychains</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="footer-social">
+
+            <h4>
+                Connect With Us
+            </h4>
+
+            <div>
+
+                <a href="#" aria-label="Instagram">
+                    ◎
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    ◉
+                </a>
+
+                <a href="mailto:YOUR_EMAIL@example.com"
+                   aria-label="Email">
+                    ✉
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-message">
+            Small Details.<br>
+            Big Personality.
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <span>
+                © 2026 Aleximitation. All rights reserved.
+            </span>
+
+            <div>
+                <a href="#">Privacy Policy</a>
+                <span>|</span>
+                <a href="#">Terms & Conditions</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JavaScript -->
+<script src="js/main.js"></script>
+
 </body>
 </html>
