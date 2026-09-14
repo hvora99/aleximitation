@@ -846,7 +846,7 @@ p {
 }
 
 
-/* ---------- Hero Visual ---------- */
+/* ---------- Hero Visual Slider ---------- */
 
 .hero-visual {
 
@@ -858,6 +858,32 @@ p {
     overflow: hidden;
 
     background: #1b1814;
+
+}
+
+
+.slide {
+
+    position: absolute;
+
+    inset: 0;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: opacity 0.6s cubic-bezier(.25,.46,.45,.94), visibility 0.6s cubic-bezier(.25,.46,.45,.94);
+
+    z-index: 1;
+
+}
+
+
+.slide.active {
+
+    opacity: 1;
+
+    visibility: visible;
 
 }
 
@@ -893,6 +919,8 @@ p {
         );
 
     pointer-events: none;
+
+    z-index: 2;
 
 }
 

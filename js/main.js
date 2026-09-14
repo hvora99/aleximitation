@@ -515,3 +515,66 @@ document.addEventListener(
     }
 );
 
+const slides = document.querySelectorAll(".slide");
+const currentNumber = document.querySelector(".slider-current");
+
+const prevButton = document.getElementById("prevSlide");
+const nextButton = document.getElementById("nextSlide");
+
+let currentSlide = 0;
+let sliderInterval;
+
+function showSlide(index) {
+
+    slides.forEach((slide) => {
+        slide.classList.remove("active");
+    });
+
+    slides[index].classList.add("active");
+
+    currentNumber.textContent =
+        String(index + 1).padStart(2, "0");
+}
+
+function nextSlide() {
+    currentSlide++;
+
+    if (currentSlide >= slides.length) {
+        currentSlide = 0;
+    }
+
+    showSlide(currentSlide);
+}
+
+function previousSlide() {
+    currentSlide--;
+
+    if (currentSlide < 0) {
+        currentSlide = slides.length - 1;
+    }
+
+    showSlide(currentSlide);
+}
+
+function startSlider() {
+    sliderInterval = setInterval(nextSlide, 3000);
+}
+
+function resetSlider() {
+    clearInterval(sliderInterval);
+    startSlider();
+}
+
+nextButton.addEventListener("click", () => {
+    nextSlide();
+    resetSlider();
+});
+
+prevButton.addEventListener("click", () => {
+    previousSlide();
+    resetSlider();
+});
+
+showSlide(currentSlide);
+startSlider();
+
