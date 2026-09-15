@@ -704,6 +704,8 @@ p {
     grid-template-columns:
         1fr 1fr;
 
+    background: var(--black);
+
 }
 
 
@@ -714,6 +716,8 @@ p {
     flex-direction: column;
 
     justify-content: center;
+
+    background: var(--black);
 
     padding:
         90px
@@ -857,7 +861,7 @@ p {
 
     overflow: hidden;
 
-    background: #1b1814;
+    background: var(--black);
 
 }
 
@@ -871,6 +875,8 @@ p {
     opacity: 0;
 
     visibility: hidden;
+
+    background: var(--black);
 
     transition: opacity 0.6s cubic-bezier(.25,.46,.45,.94), visibility 0.6s cubic-bezier(.25,.46,.45,.94);
 
@@ -894,11 +900,11 @@ p {
 
     height: 100%;
 
-    object-fit: cover;
+    object-fit: contain;
 
     object-position: center;
 
-    opacity: .95;
+    opacity: 1;
 
 }
 
@@ -911,12 +917,7 @@ p {
 
     inset: 0;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(11,10,8,.12),
-            transparent 35%
-        );
+    background: none;
 
     pointer-events: none;
 
@@ -1963,7 +1964,7 @@ p {
 
     bottom: 15px;
 
-    color: rgba(231,196,119,.35);
+    color: rgba(0, 0, 0, 0.35);
 
     font-family: var(--font-script);
 
