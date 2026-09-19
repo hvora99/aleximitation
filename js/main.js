@@ -578,3 +578,35 @@ prevButton.addEventListener("click", () => {
 showSlide(currentSlide);
 startSlider();
 
+const testimonialSlides = document.querySelector(".testimonial-slides");
+const testimonials = document.querySelectorAll(".testimonial");
+
+const prevTestimonial = document.getElementById("prevTestimonial");
+const nextTestimonial = document.getElementById("nextTestimonial");
+
+let currentTestimonial = 0;
+
+function moveTestimonial() {
+    testimonialSlides.style.transform =
+        `translateX(-${currentTestimonial * 100}%)`;
+}
+
+nextTestimonial.addEventListener("click", () => {
+    currentTestimonial++;
+
+    if (currentTestimonial >= testimonials.length) {
+        currentTestimonial = 0;
+    }
+
+    moveTestimonial();
+});
+
+prevTestimonial.addEventListener("click", () => {
+    currentTestimonial--;
+
+    if (currentTestimonial < 0) {
+        currentTestimonial = testimonials.length - 1;
+    }
+
+    moveTestimonial();
+});

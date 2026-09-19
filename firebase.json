@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "aleximitation",
     "public": ".",
     "ignore": [
       "firebase.json",

@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "aleximitation-39cb8"
-  }
+  },
+  "targets": {
+    "aleximitation-39cb8": {
+      "hosting": {
+        "aleximitation": [
+          "aleximitation"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

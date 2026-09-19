@@ -849,7 +849,73 @@ p {
 
 
 /* ---------- Hero Visual Slider ---------- */
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
 
+.testimonial-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial {
+    min-width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+.testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d4af37;
+    color: white;
+    font-size: 20px;
+}
+
+.testimonial p {
+    margin: 0 0 10px;
+}
+
+.stars {
+    color: #d4af37;
+    margin-bottom: 5px;
+}
+
+.testimonial small {
+    opacity: 0.7;
+}
+
+/* Navigation */
+.testimonial-nav {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.testimonial-nav button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d4af37;
+    background: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.testimonial-nav button:hover {
+    background: #d4af37;
+    color: white;
+}
 .hero-visual {
 
     min-height:
