@@ -17,3 +17,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ALEXIMITATION_39CB8 }}
           channelId: live
           projectId: aleximitation-39cb8
+          target: aleximitation
