@@ -701,13 +701,20 @@ p {
 
     display: grid;
 
-    grid-template-columns:
-        1fr 1fr;
+    grid-template-columns: 1fr;
+
+    grid-template-rows: 1fr;
 
 }
 
 
 .hero-content {
+
+    grid-column: 1;
+
+    grid-row: 1;
+
+    z-index: 10;
 
     display: flex;
 
@@ -715,7 +722,7 @@ p {
 
     justify-content: center;
 
-    background: var(--black);
+    background: transparent;
 
     padding:
         90px
@@ -723,6 +730,12 @@ p {
         90px
         max(50px, calc((100vw - var(--container)) / 2));
 
+    pointer-events: none; /* Let clicks pass through if needed, though buttons need pointer-events */
+
+}
+
+.hero-content > * {
+    pointer-events: auto;
 }
 
 
@@ -918,6 +931,10 @@ p {
 }
 .hero-visual {
 
+    grid-column: 1;
+
+    grid-row: 1;
+
     min-height:
         calc(100vh - var(--header-height));
 
@@ -964,7 +981,7 @@ p {
 
     height: 100%;
 
-    object-fit: contain;
+    object-fit: cover;
 
     object-position: center;
 
@@ -979,7 +996,7 @@ p {
 
     inset: 0;
 
-    background: none;
+    background: linear-gradient(to right, rgba(11, 10, 8, 0.85) 0%, rgba(11, 10, 8, 0.5) 50%, rgba(11, 10, 8, 0.2) 100%);
 
     pointer-events: none;
 
@@ -2456,21 +2473,6 @@ p {
     }
 
 
-    .header-contact {
-
-        min-width: 145px;
-
-    }
-
-
-    .hero-content {
-
-        padding:
-            70px 40px;
-
-    }
-
-
     .hero h1 {
 
         font-size:
@@ -2738,31 +2740,21 @@ p {
 
     .hero-container {
 
-        display: flex;
+        display: grid;
 
-        flex-direction: column;
+        grid-template-columns: 1fr;
+
+        grid-template-rows: 1fr;
 
         min-height: auto;
 
     }
-
 
     .hero-content {
 
-        min-height: auto;
-
-        padding:
-            70px 20px 55px;
+        padding: 55px 25px;
 
     }
-
-
-    .hero-content .eyebrow {
-
-        margin-bottom: 22px;
-
-    }
-
 
     .hero h1 {
 
@@ -2832,7 +2824,7 @@ p {
 
     .hero-visual {
 
-        height: 430px;
+        height: 100%;
 
         min-height: 430px;
 
@@ -3269,7 +3261,7 @@ p {
 
     .hero-visual {
 
-        height: 350px;
+        height: 100%;
 
         min-height: 350px;
 
